@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/user',[LibroController::class,'index']);
+Route::get('/libros/index',[LibroController::class,'index'])->name('libros.index');
 
-Route::post('/user',[LibroController::class,'index']);
-      
+Route::post('/libros',[LibroController::class,'store'])->name('libros.store');
+Route::get('/libros',[LibroController::class,'store'])->name('libros.store');     
